@@ -9,6 +9,11 @@ A simple example of automation using Appium, Ruby and Cucumber.
 
 ### Installing
 
+#### To install libraries.
+```shell
+$ bundle install
+```
+
 You should change the capabilities in the env.rb file according to your own.
 
 ---
@@ -34,5 +39,9 @@ end
 ---
 ```shell
 $ adb shell dumpsys window windows | grep -E 'mCurrentFocus'
+```
 
-
+>To Run
+```shell
+$ cucumber -f pretty -f html -o report.html
+```
